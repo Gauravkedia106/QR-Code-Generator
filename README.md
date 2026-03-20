@@ -1,1 +1,1 @@
-QR-Code-Generator Website using HTML,CSS & JavaScript.
+This is QR-Code-Generator Website using HTML,CSS & JavaScript.
