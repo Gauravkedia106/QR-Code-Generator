@@ -149,39 +149,39 @@ pipeline {
         }
     }
 }
-```
+// ```
 
-Commit this file.
+// Commit this file.
 
----
+// ---
 
-## Step 2 — Create Jenkins job for this project
+// ## Step 2 — Create Jenkins job for this project
 
-Go to Jenkins → **New Item** → name it `realworld-cicd` → **Pipeline** → **OK**
+// Go to Jenkins → **New Item** → name it `realworld-cicd` → **Pipeline** → **OK**
 
-Configure exactly like Module 4:
-- **Definition** → `Pipeline script from SCM`
-- **SCM** → `Git`
-- **Repository URL** → your GitHub repo URL
-- **Branch** → `*/main`
-- **Script Path** → `Jenkinsfile`
-- **Poll SCM** → `H/5 * * * *`
+// Configure exactly like Module 4:
+// - **Definition** → `Pipeline script from SCM`
+// - **SCM** → `Git`
+// - **Repository URL** → your GitHub repo URL
+// - **Branch** → `*/main`
+// - **Script Path** → `Jenkinsfile`
+// - **Poll SCM** → `H/5 * * * *`
 
-Click **Save** → **Build Now**.
+// Click **Save** → **Build Now**.
 
----
+// ---
 
-## Step 3 — What to look for
+// ## Step 3 — What to look for
 
-When it runs successfully you will see in your workspace:
-```
-your-repo\
-├── app.bat           ← your application
-├── test.bat          ← your tests
-├── Jenkinsfile       ← your pipeline
-├── build\            ← created by Build stage
-│   ├── app.bat
-│   └── build-info.txt
-└── deploy\           ← created by Deploy stage
-    ├── app.bat
-    └── deploy-log.txt
+// When it runs successfully you will see in your workspace:
+// ```
+// your-repo\
+// ├── app.bat           ← your application
+// ├── test.bat          ← your tests
+// ├── Jenkinsfile       ← your pipeline
+// ├── build\            ← created by Build stage
+// │   ├── app.bat
+// │   └── build-info.txt
+// └── deploy\           ← created by Deploy stage
+//     ├── app.bat
+//     └── deploy-log.txt
